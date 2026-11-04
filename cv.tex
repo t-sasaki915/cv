@@ -1,0 +1,148 @@
+% Based on "Sarvesh Parab's Résumé" by Sarvesh Parab.
+% Original source:
+% https://www.overleaf.com/articles/sarvesh-parabs-resume/ykttqtjgwssv
+%
+% Original template licence:
+% Creative Commons Attribution 4.0 International (CC BY 4.0)
+% https://creativecommons.org/licenses/by/4.0/
+%
+% Modifications:
+% Adapted and modified for a personal CV.
+%
+% Licence:
+% The template-derived portions of this file are licensed
+% under CC BY 4.0.
+%
+% The personal information and original content are not
+% covered by this licence.
+%
+% The resume.cls file retains its original copyright notice
+% and licence conditions.
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{comment}
+\usepackage{hyperref}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{TOMA SASAKI} % Your name
+\address{Manchester, UK $\vert$ netst915@gmail.com $\vert$ github.com/t-sasaki915 $\vert$ https://t-sasaki.net}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+{\bf The University of Manchester} \hfill {\em Sep 2026 -- Present}
+\\ BSc Computer Science and Mathematics
+
+{\bf INTO Manchester} \hfill {\em Sep 2025 -- Jun 2026}
+\\ International Foundation in Mathematics and Computer Science
+\\ Grades: Technical Maths (A*), Physics (A*), Chemistry (A*), English for Academic Purposes (A)
+
+{\bf Sendai Johnan High School, Sendai, Japan} \hfill {\em Apr 2022 -- Mar 2025}
+\\ High School Diploma
+\end{rSection}
+
+\begin{comment}
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+\begin{itemize} 
+		\vspace{-0.1cm}\item A
+        \vspace{-0.3cm}\item B
+\end{itemize}
+\end{rSection}
+\end{comment}
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+{\bf Type-safe GUI DSL in Haskell }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Designed a typed DSL for describing GUI component hierarchies, using type class constraints to enforce valid parent-child relationships at compile time.
+        \vspace{-0.3cm}\item Encoded component-specific property constraints in the type system to prevent invalid property assignments.
+        \vspace{-0.3cm}\item Implemented an interpreter to translate DSL descriptions into sequences of rendering commands.
+    \end{itemize}
+
+{\bf Bare-Metal AVR Breakout Game }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Developed a Breakout-style game in C for an ATmega328P microcontroller using bare-metal programming.
+        \vspace{-0.3cm}\item Designed a custom PCB in KiCad, manufactured through JLCPCB and assembled and tested the hardware.
+        \vspace{-0.3cm}\item Implemented 8x8 LED matrix multiplexing, timer and external interrupt handling and button input.
+    \end{itemize}
+
+{\bf Native Serial File Transfer Application }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Developed a native Windows GUI application in C using the Win32 API to transfer files over serial connections.
+        \vspace{-0.3cm}\item Tested on Windows 2000 through Windows 11 without requiring additional DLL dependencies.
+    \end{itemize}
+
+{\bf Typed CLI Input Library in Haskell }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Designed a typed API for interactive command-line input, supporting extensible parsing and validation through type class instances.
+        \vspace{-0.3cm}\item Implemented a custom AskT abstraction with Functor, Applicative and Monad instances to compose input workflows, including conditional prompts and optional values.
+    \end{itemize}
+
+\begin{comment}
+{\bf Compile-time Brainfuck Interpreter in Haskell }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Implemented a Brainfuck parser and interpreter in Haskell using Parsec.
+        \vspace{-0.3cm}\item Developed a Template Haskell quasiquoter to evaluate Brainfuck programs at compile time and embed their results as Haskell string literals.
+    \end{itemize}
+\end{comment}
+
+\begin{comment}
+{\bf Bare-Metal VGA Text Display in AVR Assembly }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Implemented a VGA text display on an AVR128DB28 using bare-metal assembly, adjusting video timing with instruction-level precision to operate within a 24MHz clock limit.
+        \vspace{-0.3cm}\item Developed a character-rendering system using ASCII-indexed video memory and public-domain font data.
+        \vspace{-0.3cm}\item Designed a custom PCB with a VGA connector in KiCad, then assembled and tested the hardware.
+    \end{itemize}
+\end{comment}
+
+{\bf Budgerigar Weight Monitoring System }
+    \begin{itemize}
+        \vspace{-0.3cm}\item Developed a perch-style weighing device to monitor the weight of a pet budgerigar.
+        \vspace{-0.3cm}\item Built a PC-based data collection and visualisation system to track weight changes over time.
+        \vspace{-0.3cm}\item Awarded the Grand Prize and Special Award in the Electronics Division of the 2019 Miyagi Procon.
+    \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Awards}
+\begin{itemize}
+    \item \textbf{Grand Prize and Special Award}, Miyagi Programming Contest (Miyagi Procon), 2019.
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages}: Haskell, C, Python, AVR Assembly
+    \item \textbf{Systems \& Embedded Development}: Linux (WSL), Win32 API, Bare-metal AVR
+    \item \textbf{Tools}: Git, Vim, KiCad, LaTeX
+\end{itemize}
+\end{rSection}
+
+\vfill
+\begin{center}
+    \tiny
+    Based on Sarvesh Parab's Résumé
+    (\href{https://www.overleaf.com/articles/sarvesh-parabs-resume/ykttqtjgwssv}{original template}),
+    licensed under CC BY 4.0.
+    Modified for personal use.
+\end{center}
+
+\end{document}
+
